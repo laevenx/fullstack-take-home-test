@@ -22,11 +22,11 @@ const data = [
         'model': "Location",
         'documents': [
             {
-                '_id': '1',
+                '_id': '5f3a5907-bde4-4af5-959f-65ade6d364cd',
                 'name': 'colorado'
             },
             {
-                '_id': '2',
+                '_id': 'b7166ccb-5b7f-4652-9896-df6d9b86ad45',
                 'name': 'washington'
             }
         ]
@@ -35,9 +35,9 @@ const data = [
         'model': "Event",
         'documents': [
             {
-              "_id": "1",
+              "_id": "86551c31-792a-40df-860d-79cf16a8f912",
               "name": "lucky show",
-              "location" : "1",
+              "location" : "5f3a5907-bde4-4af5-959f-65ade6d364cd",
               "startDate" : "2020-12-25",
                 "endDate" : "2020-12-26",
               "ticket" : [
@@ -54,9 +54,9 @@ const data = [
               ]
             },
             {
-                "_id": "2",
+                "_id": "4080a719-a1d7-4228-8cfb-bedc52a10bcd",
                 "name": "best show",
-                "location" : "2",
+                "location" : "b7166ccb-5b7f-4652-9896-df6d9b86ad45",
                 "startDate" : "2020-12-25",
                 "endDate" : "2020-12-26",
                 "ticket" : [
