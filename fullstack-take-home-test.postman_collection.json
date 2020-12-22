@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "a74228ea-0ba5-482b-bf32-217d5c310592",
+		"name": "fullstack-take-home-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3002/event/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "lucky fest",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "localhost:3002/event/create",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3002/event/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"event",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3002/location/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "jiangweia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3002/location/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"location",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3002/event/ticket/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "standard2",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "quota",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "event",
+							"value": "5fe0a7074349a84500273714",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3002/event/ticket/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"event",
+						"ticket",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3002/event/get_info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3002/transaction/purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"yo\",\r\n    \"event\": \"5fe1692721719e16009b39d6\",\r\n    \"tickets\": [\r\n        {\r\n            \"type\" : \"standard2\",\r\n            \"qty\" : 12\r\n        }\r\n        \r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/transaction/purchase",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"transaction",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3002/transaction/get_info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}

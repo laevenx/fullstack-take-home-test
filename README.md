@@ -14,7 +14,7 @@ download and install postman:
 
 How To Run:
 
-download bat (for windows): [Link](https://drive.google.com/file/d/17F8dqb121fDAxqR2FB5qSzc-uFzCcOXG/view?usp=sharing)
+download bat (for windows): [Link](https://drive.google.com/file/d/1AZtf5mFOMguyKXUNfGIcLnk0n45wjV9n/view?usp=sharing)
 
 download collection file : [Link](https://drive.google.com/file/d/1zBbBG0nffr0y5vtna-qIjQ7Y9AyTnq38/view?usp=sharing)
 
