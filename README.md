@@ -8,8 +8,6 @@ download and install git bash : [https://git-scm.com/downloads](https://git-scm.
 
 download and install mongoDB community  : [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
 
-download and install postman: 
-
 
 
 ### How To Run:
