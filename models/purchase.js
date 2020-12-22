@@ -7,15 +7,27 @@ var schema = new Schema(
         type:String,
         required: [true, 'name is required']
       },
-     ticket: {
-        type: mongoose.Schema.Types.ObjectId,
+      event:{
+        type: mongoose.Schema.Types.String,
         ref: "Location",
-        required: [true, 'ticket is required']
-     }
+        required: [true, 'event is required']
+      },
+     tickets: [
+        {
+            type: {
+              type: String,
+              required: [true, "ticket type is required"],
+            },
+            qty: {
+                type: Number,
+                required: [true, 'quantity is required']
+            }
+          },
+     ]
      
   },
   { timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" } }
 );
 
-const Checkout = mongoose.model("Purchase", schema);
+const Checkout = mongoose.model("Purchase", schema, "purchases");
 module.exports = Checkout;
