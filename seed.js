@@ -2,19 +2,18 @@ const seeder = require('mongoose-seed')
 
 const db = "mongodb://localhost:27017/data"
 
+
 seeder.connect(db, function(){
     seeder.loadModels( [
         './models/event.js', './models/location.js', './models/purchase.js'
     ])
-    seeder.clearModels(['Event','Location','Purchase'])
-    seeder.populateModels(data, function (err,done) {
-        if (err){
-            return console.log('seed err',err)
-        }else {
-            return console.log('seed done', done)
-        }
-        seeder.disconnect()
+    seeder.clearModels(['Event','Location','Purchase'], function(){
+        seeder.populateModels(data, function () {
+            console.log("seeding completed")
+            seeder.disconnect()
+        })
     })
+    
 })
 
 
@@ -39,6 +38,8 @@ const data = [
               "_id": "1",
               "name": "lucky show",
               "location" : "1",
+              "startDate" : "2020-12-25",
+                "endDate" : "2020-12-26",
               "ticket" : [
                   {
                       'name': 'standard',
@@ -56,6 +57,8 @@ const data = [
                 "_id": "2",
                 "name": "best show",
                 "location" : "2",
+                "startDate" : "2020-12-25",
+                "endDate" : "2020-12-26",
                 "ticket" : [
                     {
                         'type': 'standard',
