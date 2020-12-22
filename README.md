@@ -1,6 +1,6 @@
 # How To Test
 
-##### Requirements 
+### Requirements 
 
 download and Install nodejs : [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
@@ -12,11 +12,11 @@ download and install postman:
 
 
 
-How To Run:
+### How To Run:
 
 download bat (for windows): [Link](https://drive.google.com/file/d/1AZtf5mFOMguyKXUNfGIcLnk0n45wjV9n/view?usp=sharing)
 
-download collection file : [Link](https://drive.google.com/file/d/1zBbBG0nffr0y5vtna-qIjQ7Y9AyTnq38/view?usp=sharing)
+download collection file : [Link](https://drive.google.com/file/d/1TDeDHcLyUNXor2lY_RQek92Ru74vFhIG/view?usp=sharing)
 
 run run.bat
 
@@ -24,9 +24,21 @@ open postman in web browser: [https://web.postman.co/home](https://web.postman.c
 
 Select "import file" , then upload collection
 
+![](https://i.imgur.com/SK9v69B.jpg)
+
+
+
+![](https://i.imgur.com/L7aAVf1.jpg)
+
 after completed, click "fullstack-take-home-test" in "My Workspace".
 
-Happy Coding!!
+<img src="https://i.imgur.com/BFnCkDi.jpg" style="zoom:33%;" />
+
+
+
+
+
+# Happy Coding!!
 
 
 
